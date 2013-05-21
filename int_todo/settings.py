@@ -14,7 +14,7 @@ DATABASES = {
         # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'ENGINE': 'django.db.backends.sqlite3',
         # TODO: Filename should be computed dynamically
-        'NAME': 'var/data.db',
+        'NAME': '/var/data.db',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'todo_api',
     'todo_api_piston',
     'todo_client',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging

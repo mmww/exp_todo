@@ -23,3 +23,14 @@ class TodoItemTest(TestCase):
             {'title': 'the title',
              'order': 2,
              'done': False})
+
+
+
+    def test_rest_empty_views(self):
+        response = self.client.get("/rest-empty/todo/")
+        self.assertEqual(response.status_code, 200)
+
+    def test_admin_views(self):
+        response = self.client.get("/admin/")
+        self.assertEqual(response.status_code, 200)
+
